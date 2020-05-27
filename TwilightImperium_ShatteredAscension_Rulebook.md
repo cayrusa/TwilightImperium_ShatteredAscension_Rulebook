@@ -1,6 +1,6 @@
-# Shattered Ascension Rulebook  - v33_2019-06-26
+# Shattered Ascension Rulebook  - v34_2019-05-27
 ***By Cyrusa***  
-***Email for feedback: cyrusa (dot) ti3 (at) laposte (dot) net***
+***Email for feedback: cyrusa+ti3 (at) crans.org***
 
 
 <!-- > This rulebook is an attempt at rewriting the full Twilight Imperium 3 rulebook integrating the Shattered Ascension mod. The main goals were to be as concise as possible, and more precise, so as to clear out as many ambiguities as possible.
