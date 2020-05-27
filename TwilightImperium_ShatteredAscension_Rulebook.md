@@ -1,4 +1,4 @@
-# Shattered Ascension Rulebook  - v34_2019-05-27
+# Shattered Ascension Rulebook  - v35_2019-05-27
 ***By Cyrusa***  
 ***Email for feedback: cyrusa+ti3 (at) crans.org***
 
@@ -1845,7 +1845,6 @@ A specific subset of Installations.
 * abilities: 
 	* ***Race-dependant***
 * traits:
-	* **Only produceable in Home System:** A player may only produce her Flagship in her Home System.
 
 #### War Sun<a name="WarSun"></a>  
 <div>
