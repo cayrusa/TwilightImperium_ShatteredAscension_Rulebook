@@ -1,4 +1,4 @@
-# Shattered Ascension Rulebook  - v35_2019-05-27
+# Shattered Ascension Rulebook  - v36_2021-07-12
 ***By Cyrusa***  
 ***Email for feedback: cyrusa+ti3 (at) crans.org***
 
@@ -1012,6 +1012,9 @@ I modified the wordings so that they work and solve common rule questions. The e
 * Roll one die for each ship moving through a Gravity Rift. On a roll of 1,2 or 3, the ship ends its move in it, and the System becomes activated (from reinforcement).  
 If enemy ships are present in the System, the ship is destroyed instead.
 * Ships in a Gravity Rift do not block enemy movement through the System.
+
+Here is a diagram of the movement costs when moving through a Gravity Rift:
+![Gravity Rift Movement Bonus](http://www.astralvault.net/games/SA/cyrusa/cyrusaRulebook/Images/GravityRiftMovementBonus/GravityRiftMovementBonus.jpg)
 
 ### Regular Systems<a name="RegularSystems"></a>
 A **Regular System** is any System that is neither a Home System nor a Special System.
