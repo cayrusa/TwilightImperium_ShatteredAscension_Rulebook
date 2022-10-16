@@ -1,4 +1,4 @@
-# Shattered Ascension Rulebook  - v37_2021-07-13
+# Shattered Ascension Rulebook  - v38_2022-10-16
 ***By Cyrusa***  
 ***Email for feedback: cyrusa+ti3 (at) crans.org***
 
@@ -1300,7 +1300,7 @@ If a player takes control of a planet **without landing units on it**, then all 
 
 To resolve the Domain Counters at a location (planet or space), follow these steps:
 - Resolve first the **red** Domain Counters (in the order of your choice). 
-- Then resolve, as the attacker, the potential Invasion Combat and/or Space Battle (in the order of your choice) against neutral units spawned by these Domain Counters.
+- Then resolve, as the attacker, the potential Invasion Combat and/or Space Battle (in the order of your choice) against neutral units spawned by these Domain Counters. When assigning hits to their units, they always choose the unit with the highest combat value first (e.g. Fighters before Dreadnoughts).
 - Finally, resolve the **green** Domain Counters (in the order of your choice).
 - If during any step above, the units that triggered the Domain Counter resolution are no longer present (for example if they were all destroyed), then the other Domain Counters at the same location are not resolved and stay where they were.
 - Remove from the board the resolved Domain Counters.
@@ -1321,7 +1321,7 @@ If multiple Domain Counters are at the same location (planet or space), follow t
 
 ![Custodians](./Images/Custodians.jpg)
 
-These two Domain Counters have a different appearance and are sometimes used on some galaxies to protect the Mecatol Rex planet from early attacks. They behave exactly like their normal counterparts.
+These two Domain Counters have a different appearance and are sometimes used on some galaxies to protect the Mecatol Rex planet from early attacks. In general, they behave exatly like their regular counterpart. One notable exception is that they prevent their planet from being annexed with the Secondary Ability of the Diplomacy [Strategy Card](#user-content-StrategyCardPicking).
 </div>
 
 ## Spending Resources and Influence<a name="SpendingResourcesAndInfluence"></a>
@@ -1598,13 +1598,13 @@ Various effects (most notably the Primary and Secondary Ability of the Trade Str
 There are multiple ways a Trade Agreement can be broken. The most common ones are:
 
 * Any player involved in a Trade Agreement may unilaterally break it during the [Scuttle Units And Break Trade Agreements](#user-content-Scuttling_StatusPhaseStep) step of the Status Phase.  
-* At the end of an action during which a player performed a [Hostile Act](#user-content-HostileAct) against another, any Trade Agreements between these two players are broken.
+* At the end of an action during which a player performed a [Hostile Act](#user-content-HostileAct_def) against another, any Trade Agreements between these two players are broken.
 
 When a Trade Agreement is broken, the two players automatically collect a certain amount of the Trade Goods present on their Trade Agreement (the other Trade Goods are discarded), then they flip the cards so that the Trade Agreement sides face the table and finally give the card back to their former trade partner.
 
 How many Trade Goods get collected depends on how the Trade Agreement was broken:  
 
-* If it was broken due to a [Hostile Act](#user-content-HostileAct), the player that performed the Hostile Act collects none of the Trade Goods on her Trade Agreements, while her trade partner collects all the Trade Goods on her Trade Agreement.
+* If it was broken due to a [Hostile Act](#user-content-HostileAct_def), the player that performed the Hostile Act collects none of the Trade Goods on her Trade Agreements, while her trade partner collects all the Trade Goods on her Trade Agreement.
 * If it was broken for any other reason, both players collect half (round down) of the Trade Goods on their Trade Agreement.
 
 ### Self-Trading<a name="SelfTrading"></a>
@@ -2328,27 +2328,29 @@ During the Status Phase, captives may be released or executed by their captor. T
 
 ### Leader Abilities<a name="LeaderAbilities"></a>  
 
+***Note:*** *Leader abilities with an \* do not stack between multiple Leaders of the same type. For example, your ground units fighting with two Generals only receive +1 to their combat rolls, not +2.*
+
 #### Admiral<a name="Admiral"></a>
-<div>
+<!-- <div>
 <details>
 	<summary>Change from base SA (click to expand)</summary>
 
 For concision: "A ship carrying Admiral(s) receives one extra die during combat rounds of Space Battles" -> "A ship carrying Admiral(s) receives +1 combat die."
 </details>
-</div>
+</div> -->
 
 <div>
 
 ![Admiral](./Images/Admiral.jpg)
 </div>
 
-* A ship carrying Admiral(s) receives +1 combat die.
-* A Dreadnought carrying Admiral(s) receives +1 movement.
-* Retreating a fleet containing Admiral(s) from Space Battle is always paid from reinforcements.
+* **Fire Control:** A ship carrying Admiral(s) has one extra combat die.\*
+* **Astrogation:** A [Dreadnought](#user-content-Dreadnought) carrying an Admiral has +1 movement.\*
+* **Withdrawal:** [Retreating](#user-content-ConductRetreat_SpaceBattleStep) a fleet with an Admiral uses a Command Counter from reinforcements.
 <!-- * If participating in a Space Battle, an Admiral may prevent the opposing fleet from retreating, unless it also contains an Admiral. -->
 
 #### Diplomat<a name="Diplomat"></a>
-<div>
+<!-- <div>
 <details>
 	<summary>Change from base SA (click to expand)</summary>
 
@@ -2364,27 +2366,20 @@ Points of this wording that are addressed by this change:
 	- "cancel the Invasion Combat step and force the attacker to return ground units to whence they came" -> "cancel both (they still count as Hostile Acts)". 1) If you "cancel the Invasion Combat step", nothing can happen on the other planets in the same system, which is not intended. 2) If you return only "ground units", then the PDSs and Leaders technically stay on the planet which makes no sense.
 	- "the defender may not use this ability again" -> "the defender may not use it again". For concision.
 </details>
-</div>
+</div> -->
 
 <div>
 
 ![Diplomat](./Images/Diplomat.jpg)
 </div>
 
-<!-- > I don't see how to write properly the ability to move (and let other ships move) through enemy fleets of the Diplomat. I'm considering giving this ability to all fleets regardless of Diplomat presence to compensate.   -->
 
-<!-- * If the owner of the Diplomat and of both involved fleets comply, a fleet may move through an enemy fleet in the Diplomat's System (even if the Diplomat is currently moving through). -->
-<!-- * If the owners of the Diplomat and of both involved fleets comply, a defending fleet may retreat after enemy ships have moved into the System, and before the Space Battle step.  
-This does not break Trade Agreements. -->
-* When plotting it, the trajectory of a ship carrying a Diplomat may go through Systems containing enemy ships, provided the owners of these ships agree. Other ships may then also go through these Systems during the current action.
-* Ship trajectories may be plotted through a System containing a Diplomat and enemy ships if the owners of both agree.
-<!-- * After the ships Movement step of a Tactical Action where ships were moved into a system containing a Diplomat and an enemy fleet, the enemy fleet may, if the owners of both fleets and of the Diplomat agree, immediately retreat. If it does, the initial movement is not considered as a [Hostile Act](#user-content-HostileAct).  -->
-* After a fleet has been moved into a system containing an enemy fleet, the latter may immediately retreat if the owners of both fleets and of a Diplomat in the system agree.
-* A Diplomat present on a planet subject to [invasion](#user-content-Invasion) and/or bombardment may cancel both (they still count as [Hostile Acts](#user-content-HostileAct)). The attacker may overturn this ability by spending 6 influence, in which case the Diplomat [escapes](#user-content-FateRollEscape).  
-If this ability was used without being overturned, the defender may not use it again on this planet during this round or the next (even by another Diplomat).
+* **Grant Passage:** A Diplomat may let fleets move through each other in its system if their owners agree. The Diplomat can do this while moving.
+* **Ceasefire:** A Diplomat may let defending fleets in its system retreat before the Space Battle step if the attacker agrees.
+* **Objection:** A Diplomat may cancel enemy landing and bombardment on its planet, unless the attacker spends 6 influence, in which case the Diplomat escapes. You may not use this ability on the same planet this round or the next.
 
 #### General<a name="General"></a>
-<div>
+<!-- <div>
 <details>
 	<summary>Change from base SA (click to expand)</summary>
 	
@@ -2396,18 +2391,19 @@ Second ability:
 - Clarified that multiple Generals do not mean multiple bombardment penalties
 - Concision
 </details>
-</div>
+</div> -->
 
 <div>
 
 ![General](./Images/General.jpg)
 </div>
 
-* Ground units participating in an Invasion Combat alongside (a) friendly General(s) receive +1 to their Combat Rolls, and 2 of their Combat Rolls can be re-rolled each Combat Round (the same Combat Roll can be re-rolled twice).
-* Bombardment Combat Rolls against planets containing General(s) receive -3.
+* **Inspiration:** Ground units with a General receive +1 to combat rolls during Invasion Combats.\*
+* **Tactics:** A General may re-roll 2 friendly combat rolls (or the same twice) per Invasion Combat combat round.\*
+* **Fortification:** [Bombardment](#user-content-Bombardment_unitAbility) rolls against a planet with a General receive -3.\*
 
 #### Agent<a name="Agent"></a>
-<div>
+<!-- <div>
 <details>
 	<summary>Change from base SA (click to expand)</summary>
 
@@ -2421,20 +2417,19 @@ Reworded the third ability:
 - So as to have it worded in the third person (like the other Leader abilities).  
 - So as to also encompass the case where an Agent lands on an enemy planet containing a Leader but without an Invasion Combat taking place (because no enemy ground units/PDS)
 </details>
-</div>
+</div> -->
 
 <div>
 
 ![Agent](./Images/Agent.jpg)
 </div>
 
-* An Agent on a planet prevents enemy units from using the [Invasion Defence ability](#user-content-InvasionDefence_unitAbility), and grants the [Capture Installations ability](#user-content-CaptureInstallations_unitAbility) to friendly ground units.
-* An Agent present in the Effect Location of an Action Card just played may [sabotage](#user-content-Sabotage) it. If the Action Card has a "Scattered Effect", the card is not *sabotaged* but its effects in the System are cancelled. An Agent may not use this ability again the same round or the next.
-<!-- * When a Leader must make a fate roll as a result of a Space Battle, [invasion](#user-content-Invasion) or Invasion Combat involving an enemy Agent, these Leaders may be automatically [Captured](#user-content-FateRollCaptured) by the Agent's owner instead.   -->
-* An Agent may automatically [capture](#user-content-FateRollCaptured) enemy Leaders instead of them making a fate roll as a result of a Space Battle, [invasion](#user-content-Invasion) or Invasion Combat in which the Agent is involved. 
+* **Infiltration:** An army invading with an Agent cannot be shot at by PDSs, and captures PDSs and Space Docks when winning (they still count as 'destroyed' for objectives).
+* **Sabotage:** An Agent at the effect location of an [Action Card](#user-content-ActionCards) just played may [cancel](#user-content-Sabotage) it. "Scattered effects" are only cancelled in the Agent's system. Cooldown: this round and the next.
+* **Capture:** An Agent in Space Battle or Invasion Combat may [capture](#user-content-FateRollCaptured) enemy Leaders who would make [fate rolls](#user-content-FateRoll). 
 
 #### Scientist<a name="Scientist"></a>
-<div>
+<!-- <div>
 
 <details>
 	<summary>Change from base SA (click to expand)</summary>
@@ -2447,18 +2442,17 @@ Third ability wording:
 - "receive +1 on all rolls" -> "receive +1 to their Combat Rolls". Let's use the the right terms.  
 - "They also receive +1 planetary shield" -> "and the [Planetary Shield (1) ability](#user-content-PlanetaryShield_unitAbility)". Concision, and compliance with the ability-based design.  
 </details>
-</div>
+</div> -->
 
 <div>
 
 ![Scientist](./Images/Scientist.jpg)
 </div>
 
-<!-- * A Scientist may double the Technology cost discount granted by a single Artifact or technology specialty it is present with (a Scientist is present with an Artifact in space when on a ship in the same system). Multiple Scientists cannot use this ability on the same Artifact or technology specialty for the same Technology purchase. -->
-* A Scientist may double the effect of a Technology Specialty from a planet or Artifact it is present with (a Scientist is present with an Artifact in space when on a ship in the same system). Multiple Scientists cannot use this ability on the same Technology Specialty.
-* The cost of building Space Docks on a planet with Scientist(s) is 3 resources (instead of 4).
-* PDSs on planets with friendly Scientists receive +1 to their Combat Rolls and the [Planetary Shield (1) ability](#user-content-PlanetaryShield_unitAbility).
-* Before acquiring a Technology, you may exhaust a planet with a Technology Specialty containing your Scientist, in order to ignore a pre-requisite of its color.
+* **Analysis:** A Scientist doubles the discount from a [technology specialty](#user-content-TechnologySpecialty) or [Artifact](#user-content-Artifact) on its planet (or in space if on a ship) that is not doubled by another Scientist.
+* **Architect:** A Scientist reduces the resource cost of building [Space Docks](#user-content-SpaceDock) on its planet by 1.\*
+* **Ballistics:** PDSs on planets with a Scientist receive +1 [Planetary Shield](#user-content-PlanetaryShield_unitAbility) and +1 to combat rolls.\*
+* **Eureka:** Before acquiring a Technology, a Scientist may exhaust its planet, if it has a technology specialty, to skip a pre-requisite of the same color.
 
 ## Surrender and Elimination<a name="EliminationAndSurrender"></a>
 
@@ -2508,7 +2502,7 @@ Then follow this procedure: -->
 
 	Repeat this process until all the fleets and planets (except the capital planet) of the surrendering player have been attributed to other players.
 8. **Elimination:**  
-	Finally, the surrendering player is *eliminated* (follow the [elimination procedure](#user-content-Elimination)), with the exception that the Trade Agreements she had with other players stay open until the capital planet is lost (or until her trade partners perform [Hostile Acts](#user-content-HostileAct) against the capital planet).
+	Finally, the surrendering player is *eliminated* (follow the [elimination procedure](#user-content-Elimination)), with the exception that the Trade Agreements she had with other players stay open until the capital planet is lost (or until her trade partners perform [Hostile Acts](#user-content-HostileAct_def) against the capital planet).
 
 ***Note:*** *The capital planet and its units (until they are taken over or destroyed) are to be considered by the remaining players as belonging to an opponent that has the same technologies, racial abilities and racial upgrades the surrendering player had. They systematically use any effects they have to, but none that are optional, except the [Space Cannon](#user-content-SpaceCannon_unitAbility) ability which they use whenever they can.*
 
@@ -2834,24 +2828,24 @@ For the general rules regarding Domain Counters, see the [Domain Counter section
 |![DS_HiddenFactory](./Images/DS_HiddenFactory.jpg)  | <b> [Hidden Factory](#user-content-HiddenFactory) <a name="HiddenFactory"></a> </b> <br> *Your exploratory units have unearthed an ancient, abandoned starship factory.* <br> <br> You may produce ships for up to two production capacity in the system. One of the resources spent comes for free.|
 |![DS_NativeIntelligence](./Images/DS_NativeIntelligence.jpg)  | <b> [Native Intelligence](#user-content-NativeIntelligence) <a name="NativeIntelligence"></a> </b> <br> *The local civilization offers their allegiance and share their research about distant stars.* <br> <br> Secretly look at any face down Domain Counter on the board.|
 |![FF_AbandonnedFreighters](./Images/FF_AbandonnedFreighters.jpg)  | <b> [Abandoned Freighters](#user-content-AbandonedFreighters) <a name="AbandonedFreighters"></a> </b> <br> *An abandoned fleet of freighters drift in dead space, with cargo intact. The whereabouts of the crew remains a mystery.* <br> <br> Receive 2 Trade Goods.|
-|![FF_UnchartedHabitats](./Images/FF_UnchartedHabitats.jpg)  | <b> [Uncharted Habitats](#user-content-UnchartedHabitats) <a name="UnchartedHabitats"></a> </b> <br> *Amidst the dark between the stars you discover an advanced, self sustaining society previously not earlier registered in galactic records.*  <br> <br> Leave this counter in the system. It is treated as a Trade Station of 0 resource and 1 influence (no refresh ability). Take a Colony card to represent this habitat.|
+|![FF_UnchartedHabitats](./Images/FF_UnchartedHabitats.jpg)  | <b> [Uncharted Habitats](#user-content-UnchartedHabitats) <a name="UnchartedHabitats"></a> </b> <br> *Amidst the dark between the stars you discover an advanced, self sustaining society previously not earlier registered in galactic records.*  <br> <br> Leave this counter in the system. It is treated as a Trade Station of 0 resource and 1 influence (no refresh ability). Take a Colony card to represent this habitat. It is not considered as a planet or a Trade Station for Objectives.|
 |![FF_ShipGraveyard](./Images/FF_ShipGraveyard.jpg)  | <b> [Ship Graveyard](#user-content-ShipGraveyard) <a name="ShipGraveyard"></a> </b> <br> *Remnants of a once great battle rests solemnly in space. Some of the ships may be repaired or looted for fuel and supplies.*  <br> <br> Produce one ship in the system for half its resource cost (round down) *or* receive one Command Counter in your Fleet Supply. This ship may not be a War Sun or a Flagship.|
 |![FF_Discovery](./Images/FF_Discovery.jpg)  | <b> [Discovery](#user-content-Discovery) <a name="Discovery"></a> </b> <br> *The venture through uncharted space has provided you with advantageous discoveries.*  <br> <br> Gain one Action Card or one Command Counter.|
-|![DS_NaturalWealth](./Images/DS_NaturalWealth.jpg)  | <b> [Natural Wealth](#user-content-NaturalWealthCounter) <a name="NaturalWealthCounter"></a> </b> <br> *The planet is rich on ore, gas, vegetation and other natural resources that can be extracted relatively easily.*  <br> <br> Place the indicated number of Trade Goods on the planet, that will work as Natural Wealth: players may take one at the end of their Tactical Actions in the system and during the Refresh Planet step of the Status Phase if they control the planet. <br> Natural Wealth Trade Goods at the same location but from multiple sources are merged into a single stack.|
+|![DS_NaturalWealth](./Images/DS_NaturalWealth.jpg)  | <b> [Natural Wealth](#user-content-NaturalWealthCounter) <a name="NaturalWealthCounter"></a> </b> <br> *The planet is rich on ore, gas, vegetation and other natural resources that can be extracted relatively easily.*  <br> <br> Place the indicated number of Trade Goods on the planet, that will work as Natural Wealth: if they control the planet, players may take one at the end of their Tactical Actions in the system and during the Refresh Planet step of the Status Phase. <br> Natural Wealth Trade Goods at the same location but from multiple sources are merged into a single stack.|
 |![DS_IndustrialSociety](./Images/DS_IndustrialSociety.jpg)  | <b> [Industrial Society](#user-content-IndustrialSociety) <a name="IndustrialSociety"></a> </b> <br> *An industrious and friendly populace welcomes your empire. With your help, they will soon be able to construct ships for interstellar travel.*  <br> <br> Receive a free (exhausted) Space Dock on this planet. <br> If you are the Saar, gain 2 Trade Goods instead.|
 |![DS_TechnologicalLegacy](./Images/DS_TechnologicalLegacy.jpg)  | <b> [Technological Legacy](#user-content-TechnologicalLegacy) <a name="TechnologicalLegacy"></a> </b> <br> *The populace of this planet harbours relics and remnants of ancient Lazax technology.*  <br> <br> Receive one technology for which you have the needed pre-requisites, chosen by the player on your left.|
-|![FF_AlienArtifact](./Images/FF_AlienArtifact.jpg)  | <b> [Alien Technology](#user-content-AlienArtifact) <a name="AlienArtifact"></a> </b> <br> *Strange, alien technology are identified in the system. After careful research, it reveals marvellous technological secrets your scientists cannot fully reproduce.*  <br> <br> Leave this counter face-up in place for the remainder of the game. It is no longer treated as a Domain Counter but is controlled as if it was an Artifact. Any player taking control of this counter may choose one Technology and utilize its effect as long as they maintain control of this counter.|
+|![FF_AlienArtifact](./Images/FF_AlienArtifact.jpg)  | <b> [Alien Technology](#user-content-AlienArtifact) <a name="AlienArtifact"></a> </b> <br> *Strange, alien technology are identified in the system. After careful research, it reveals marvellous technological secrets your scientists cannot fully reproduce.*  <br> <br> Leave this counter face-up in place for the remainder of the game. It is no longer treated as a Domain Counter but is controlled as if it was an Artifact. Any player taking control of this counter may choose one Technology and [utilize its effect](#yser-content-UseTheEffectsOfTechnology) as long as they maintain control of this counter.|
 |![DS_LazaxSurvivors](./Images/DS_LazaxSurvivors.jpg)  | <b> [Lazax Survivors](#user-content-LazaxSurvivors) <a name="LazaxSurvivors"></a> </b> <br> *The signs of intelligent life you detected turned out to be the very descendants of the great Lazax themselves.*  <br> <br> Leave this counter face-up in place for the remainder of the game. It is no longer treated as a Domain Counter but is controlled as if it was an Artifact. The player controlling this counter receives +3 votes.|
-|![DS_NeutronRadiation](./Images/DS_NeutronRadiation.jpg)  | <b> [Neutron Radiation](#user-content-NeutronRadiation) <a name="NeutronRadiation"></a> </b> <br> *The entire landing force is exposed to an intense pulsation of ionizing radiation. No survivors are reported.*  <br> <br> Remove all but 2 of your landing ground units and leave this counter on the planet. When a planet with Neutron Radiation counters would be refreshed, its owner removes them and must either forfeit the refresh or lose all ground units on the planet.|
+|![DS_NeutronRadiation](./Images/DS_NeutronRadiation.jpg)  | <b> [Neutron Radiation](#user-content-NeutronRadiation) <a name="NeutronRadiation"></a> </b> <br> *The entire landing force is exposed to an intense pulsation of ionizing radiation. No survivors are reported.*  <br> <br> Place this counter on the planet's card. It is no longer a Domain Counter. When a planet whose card containg Neutron Radiation counters would get refreshed, cancel that refresh and remove one counter from it instead.|
 |![DS_Settlers](./Images/DS_Settlers.jpg)  | <b> [Settlers](#user-content-Settlers) <a name="Settlers"></a> </b> <br> *Pioneers from one of the Great Races have already settled on the planet.*  <br> <br> Roll a die to determine a random opponent, who places two Ground Forces on the planet and claim it. The active player may cancel her landing on this planet (this also cancels bombardment). Units/Leaders unable to go back to where they came from are destroyed/make Fate Rolls.|
 |![FF_GravityRift](./Images/FF_GravityRift.jpg)  | <b> [Gravity Rift](#user-content-GravityRiftCounter) <a name="GravityRiftCounter"></a> </b> <br> *Your ships head into the midst of an uncharted gravity rift!*  <br> <br> Leave this counter in the system and treat it as a [Gravity Rift](#user-content-GravityRift) while the counter is present. <br> Remove the counter at the end of the first action in which a ship has been trapped by this Gravity Rift.|
 |![DS_WormholeDiscovery](./Images/DS_WormholeDiscovery.jpg)  | <b> [Wormhole Discovery](#user-content-WormholeDiscovery) <a name="WormholeDiscovery"></a> </b> <br> *Investigating an anomaly in the sector reveals unexpected wormhole activity.*  <br> <br> Leave this counter in the system. Treat the system as having an unstable wormhole of the indicated type.|
-|![FF_SpacePirates](./Images/FF_SpacePirates.jpg)  | <b> [Space Pirates](#user-content-SpacePirates) <a name="SpacePirates"></a> </b> <br> *Ruthless vagabond roam the galaxy to prey on the wealthy and the weak.*  <br> <br> Choose either: <br>- Pay 2 Trade Goods and remove this counter.<br>- Spawn a neutral Dreadnought. Destroying it grants 2 Trade Goods, otherwise remove it and place this counter back at the end of the current action.|
-|![DS_FighterAmbush](./Images/DS_FighterAmbush.jpg)  | <b> [Fighter Ambush](#user-content-FighterAmbush) <a name="FighterAmbush"></a> </b> <br> *Sensors detect a myriad of small, unidentified ships approaching at high velocity.*  <br> <br> Spawn the indicated number of neutral Fighters in the system. If neutral Fighters remain in the system at the end of the current action, remove them and place this counter back (unless it was on a planet that is no longer neutral).|
+|![FF_SpacePirates](./Images/FF_SpacePirates.jpg)  | <b> [Space Pirates](#user-content-SpacePirates) <a name="SpacePirates"></a> </b> <br> *Ruthless vagabond roam the galaxy to prey on the wealthy and the weak.*  <br> <br> Choose either: <br>- Pay 2 Trade Goods and remove this counter.<br>- Spawn a neutral Dreadnought in the system for this action. When the action ends, if no player has units where this counter was, place it back. Otherwise, this player gains 2 Trade Goods.|
+|![DS_FighterAmbush](./Images/DS_FighterAmbush.jpg)  | <b> [Fighter Ambush](#user-content-FighterAmbush) <a name="FighterAmbush"></a> </b> <br> *Sensors detect a myriad of small, unidentified ships approaching at high velocity.*  <br> <br> Spawn the indicated number of neutral Fighters in the system for this action. When the action ends, if no player has units where this counter was, place it back.|
 |![FF_SuddenCollision](./Images/FF_SuddenCollision.jpg)  | <b> [Sudden Collision](#user-content-SuddenCollision) <a name="SuddenCollision"></a> </b> <br> *In the dead of space, unidentified objects slam into the hull and cargo area of your ships.*  <br> <br> Inflict a hit on one of your ships in the system *or* lose one unit carried by one of them. If you have the Antimass Deflectors technology, ignore this effect.|
 |![DS_BioHazard](./Images/DS_BioHazard.jpg)  | <b> [Bio-Hazard](#user-content-BioHazard) <a name="BioHazard"></a> </b> <br> *While attempting to terraform the planet, millions perish due to influence highly aggravating toxins.*  <br> <br> Inflict one hit on the landing army. If no ground units remain to claim the planet, leave this counter in place.|
-|![DS_HostileLocals](./Images/DS_HostileLocals.jpg)  | <b> [Hostile Locals](#user-content-HostileLocals) <a name="HostileLocals"></a> </b> <br> *All forms of Diplomacy with the local civilization have failed.*  <br> <br> Spawn the indicated number of neutral Ground Forces on this planet. If you do not control this planet at the end of the current action, remove these Ground Forces and place this counter back.|
-|![DS_AutomatedDefence](./Images/DS_AutomatedDefence.jpg)  | <b> [Automated Defence](#user-content-AutomatedDefence) <a name="AutomatedDefence"></a> </b> <br> *Powerful laser beams soar through the atmosphere of the planet and cut into the hull of your ships.*  <br> <br> Two neutral PDSs will defend the planet. They immediately fire (using Space Cannon) once each at your fleet in the system (if you have one).<br>These PDSs cannot be captured. At the end of the current action, receive a PDS on this planet if you control it, otherwise remove these PDSs and place this counter back.|
+|![DS_HostileLocals](./Images/DS_HostileLocals.jpg)  | <b> [Hostile Locals](#user-content-HostileLocals) <a name="HostileLocals"></a> </b> <br> *All forms of Diplomacy with the local civilization have failed.*  <br> <br> Spawn the indicated number of neutral Ground Forces on this planet for this action. When the action ends, if no player has units where this counter was, place it back.|
+|![DS_AutomatedDefence](./Images/DS_AutomatedDefence.jpg)  | <b> [Automated Defence](#user-content-AutomatedDefence) <a name="AutomatedDefence"></a> </b> <br> *Powerful laser beams soar through the atmosphere of the planet and cut into the hull of your ships.*  <br> <br> Spawn 2 neutral PDSs on this planet for this action. They immediately fire (using Space Cannon) once each at any player fleet in the system. These PDSs cannot be captured. When the action ends, if no player has units where this counter was, place it back. Otherwise, this player gains a PDS there.|
 |![DS_HostilesAndNaturalWealth](./Images/DS_HostilesAndNaturalWealth.jpg)  | <b> [Hostiles and Natural Wealth](#user-content-HostilesAndNaturalWealth) <a name="HostilesAndNaturalWealth"></a> </b> <br> *The planet is abundant with natural resources, but the local populace will defend it at all costs.*  <br> <br> Roll one die and divide the result by two (round down). Replace this counter with both a Hostile Locals and a Natural Wealth Domain Counter of this value.|
 
 ## Annex 2: Variants and Optional Rules<a name="VariantsAndOptionalRules"></a>
